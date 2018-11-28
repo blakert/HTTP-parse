@@ -24,7 +24,7 @@ app.get('/api/whoami',function(req,res){
     "language": language,
     "system info": sysInfo
   }
-  res.send(responseObj);
+  res.json(responseObj);
 });
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
